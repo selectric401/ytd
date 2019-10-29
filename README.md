@@ -17,4 +17,4 @@ At the top of `ytd.tex`, adjust the settings of the `geometry` package to match 
 
 ## Acknowledgments
 
-I cribbed most of the file handler from [https://tex.stackexchange.com/questions/256685/items-from-file-in-itemize-environment](this StackExchange comment.)
+I cribbed most of the file handler from [this StackExchange comment](https://tex.stackexchange.com/questions/256685/items-from-file-in-itemize-environment).
