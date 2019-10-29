@@ -4,6 +4,8 @@
 
 `ytd` takes a text file and turns it into a nicely formatted todo list that fits on an index card. If you're feeling nostalgic for [2010 and the Hipster PDA](http://www.43folders.com/2004/09/03/introducing-the-hipster-pda), this is the perfect solution.
 
+![alt text](readme/example.png "Example index card output")
+
 ## Requirements
 * XeLaTeX
 * A printer that can print on index cards
