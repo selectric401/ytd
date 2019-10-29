@@ -1,6 +1,6 @@
 # ytd
 
-*Yak To Do*: A to-do list generator for yak shavers
+**Yak To Do**: A to-do list generator for yak shavers
 
 ## Requirements
 * XeLaTeX
