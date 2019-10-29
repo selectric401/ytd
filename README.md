@@ -2,20 +2,22 @@
 
 **Yak To Do**: A to-do list generator for yak shavers
 
+`ytd` takes a text file and turns it into a nicely formatted todo list that fits on an index card. If you're feeling nostalgic for [2010 and the Hipster PDA](http://www.43folders.com/2004/09/03/introducing-the-hipster-pda), this is the perfect solution.
+
 ## Requirements
 * XeLaTeX
 * A printer that can print on index cards
 * Index cards
 
-This will probably work with straight LaTeX, but it might need some tweaking. I haven't tested it, because Unicode support and system fonts are nice.
+This will probably work with straight LaTeX, but it might need some tweaking. I haven't tested it, because Unicode support and system fonts are nice. You could also modify this to print on any size paper you prefer. 
 
 ## How to use
 
-At the top of `ytd.tex`, adjust the settings of the `geometry` package to match the printable area margins of your printer. Additionally, you'll most likely want to change the font settings to something that exists on your system and that suits your style.
+At the top of `ytd.tex`, adjust the settings of the `geometry` package to match the printable area margins of your printer. (The repo is set up for my printer, a Brother HL-2270DW. I suspect that most Brother printers will have the same printable area.) Additionally, you'll most likely want to change the font settings to something that exists on your system and that suits your style.
 
-1. Add to-do list items to a file `todo.txt` (you can copy the provided `todo.txt.example` if you like)
+1. Add to-do list items, one per line, to a file `todo.txt` (you can copy the provided `todo.txt.example` if you like)
 2. Run `xelatex ytd.tex`
-3. Print the PDF output
+3. Print the PDF output (at actual size/100% scale, please!)
 
 ## Acknowledgments
 
