@@ -7,6 +7,8 @@
 * A printer that can print on index cards
 * Index cards
 
+This will probably work with straight LaTeX, but it might need some tweaking. I haven't tested it, because Unicode support and system fonts are nice.
+
 ## How to use
 
 At the top of `ytd.tex`, adjust the settings of the `geometry` package to match the printable area margins of your printer. Additionally, you'll most likely want to change the font settings to something that exists on your system and that suits your style.
