@@ -1,3 +1,4 @@
+% formatting
 \documentclass{article}
 \usepackage[paperwidth=3in, paperheight=5in, top=0.17in, bottom=0.17in, left=0.25in, right=0.25in]{geometry}
 \frenchspacing
@@ -15,6 +16,24 @@
 \newlist{todolist}{itemize}{1}
 \setlist[todolist]{label=$\square$}
 
+% read the file
+
+\newread\todo
+
+\newcommand{\openandtypeset}[1]{%
+\IfFileExists{#1}{%  Check first
+\openin\todo=#1  % Open the file from #1 
+\begin{todolist}[leftmargin=*]
+\loop
+\read\todo to \localvariable   % Read line content to `\localvariable`
+\ifeof\todo  % Is it at the end of the file -> localvariable is empty effectively --> do not use \item then
+\else
+\item \localvariable % Typeset the local item
+\repeat
+\end{todolist}
+\closein\todo%  Close the file. 
+}{}% End of \IfFileExists
+}
 
 \begin{document}
 
@@ -22,9 +41,6 @@
 \hfill
 \ytddate{\datedayname, \today}
 
-\begin{todolist}[leftmargin=*]
-\item List item 1
-\item List item 2
-\end{todolist}
+\openandtypeset{todo.txt}
 
 \end{document}
