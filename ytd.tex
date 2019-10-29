@@ -1,0 +1,30 @@
+\documentclass{article}
+\usepackage[paperwidth=3in, paperheight=5in, top=0.17in, bottom=0.17in, left=0.25in, right=0.25in]{geometry}
+\frenchspacing
+\usepackage{datetime2}
+\usepackage{datenumber}
+\setlength{\parindent}{0pt}
+\usepackage{fontspec}
+\setmainfont[Ligatures=TeX, Scale=0.8]{IBM Plex Mono}
+\newfontfamily\headerfont{Akzidenz-Grotesk BQ Medium}[Ligatures=TeX]
+\newcommand\ytdheader[1]{{\headerfont #1}}
+\newfontfamily\datefont{Akzidenz-Grotesk BQ Regular}[Ligatures=TeX]
+\newcommand\ytddate[1]{{\datefont #1}}
+\raggedright
+\usepackage{enumitem,amssymb}
+\newlist{todolist}{itemize}{1}
+\setlist[todolist]{label=$\square$}
+
+
+\begin{document}
+
+\ytdheader{To Do List}
+\hfill
+\ytddate{\datedayname, \today}
+
+\begin{todolist}[leftmargin=*]
+\item List item 1
+\item List item 2
+\end{todolist}
+
+\end{document}
