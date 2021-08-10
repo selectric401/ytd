@@ -24,3 +24,7 @@ At the top of `ytd.tex`, adjust the settings of the `geometry` package to match 
 ## Acknowledgments
 
 I cribbed most of the file handler from [this StackExchange comment](https://tex.stackexchange.com/questions/256685/items-from-file-in-itemize-environment), instead of trying to make a ludicrous bash script.
+
+### Errata
+
+Most of my work on this repository is done on [my personal Git server](https://git.vaxinthebasement.com/selectric/ytd). It may take some time for updates to be pushed from there to GitHub or other locations.
