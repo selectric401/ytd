@@ -15,7 +15,7 @@ This will probably work with straight LaTeX, but it might need some tweaking. I 
 
 ## How to use
 
-At the top of `ytd.tex`, adjust the settings of the `geometry` package to match the printable area margins of your printer. (The repo is set up for my old printer, a Brother HL-2270DW. I suspect that most Brother printers will have the same printable area.) Additionally, you'll most likely want to change the font settings to something that exists on your system and that suits your style.
+At the top of `ytd.tex`, adjust the settings of the `geometry` package to match the printable area margins of your printer. (The repo is set up for my old printer, a Brother HL-2270DW. I suspect that most Brother printers will have the same printable area. -- my new printer is an HL-L2395DW and it works without modifications.) Additionally, you'll most likely want to change the font settings to something that exists on your system and that suits your style.
 
 1. Add to-do list items, one per line, to a text file. (You can copy the provided `todo.txt.example` if you like -- this can live anywhere on your system and outside of the `ytd` directory.)
 2. Run `build.sh [todo file path] [output file path]`.
